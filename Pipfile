@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+aiohttp = "*"
+av = "*"
+aiortc = "*"
+numpy = "*"
+scipy = "*"
+matplotlib = "*"
+scikit-learn = "*"
+opencv-contrib-python = "*"
+opencv-python = "*"
+imutils = "*"
+tensorflow = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.7"

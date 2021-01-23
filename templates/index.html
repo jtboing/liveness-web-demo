@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Liveness Detection</title>
+    </head>
+    <body>
+        <h1>Liveness Detection</h1>
+        <!-- <p>{{ label }}</p> -->
+
+        <div id="container">
+            <video autoplay="true" id="videoElement">
+
+            </video>
+        </div>
+
+        <script>
+            var video = document.querySelector("#videoElement");
+
+            if (navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true})
+                    .then(function (stream) {
+                        video.srcObject = stream;
+                })
+                    .catch(function (error){
+                        console.log("Something went wrong!")
+                })
+            }
+
+        </script>
+
+    </body>
+</html>
